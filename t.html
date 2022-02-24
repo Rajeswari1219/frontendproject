@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base-Apparel</title>
+    <link rel="stylesheet" href="t.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+            </ul>
+            
+        </nav>
+        <section class="maincont">
+        <div class="text-box">
+            <h1>Welcome <span class="auto-input"></span></h1>
+            <p>Hello fellow shoppers! We're currently building our new fashion store.<br>
+                Add your email below to stay up-to-date with announcements and our launch deals.</p>
+                <br>
+                <form name="form1" action="#">            
+                      <input class="s" type="text" name="text1" placeholder=" enter emil-id"/>          
+            
+                        <input class="s1" type="submit" name="validate" value="Register" onclick="ValidateEmail(document.form1.text1)"/>                             
+                                 
+                 </form>
+        </div>
+        <div class="text-box-left">
+        <img src="s.jpg" class="user-img">
+</div>
+    </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed=new Typed(".auto-input",{
+            strings:[" To"," Base" ," Apparel"," Coming"," soon"," page"],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true
+        })
+
+        function ValidateEmail(input) {
+
+var validRegex = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
+
+if (input.value.match(validRegex)) {
+
+  alert("Registered Successfully.");
+
+  document.form1.text1.focus();
+
+  return true;
+
+} else {
+
+  alert("Invalid email address!");
+
+  document.form1.text1.focus();
+
+  return false;
+
+}
+
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .section{
+            width: 100%;
+            min-height: 100vh;
+            background-color: #dddddd
+        }
+        .container{
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 100px;
+        }
+        .content-section{
+            float: left;
+            width: 55%;
+        }
+        .image-section{
+            float: right;
+            width: 40px;
+        }
+        .image-section img{
+            width: 100%;
+            height: auto;
+            position: fixed;
+        }
+        .content-section .title{
+            text-transform: uppercase;
+            font-size: 28px;
+        }
+        .content-section .content h3{
+            margin-top: 20px;
+            color: #5d5d5d;
+            font-size: 21px;
+        }
+        .content-section .content p{
+            margin-top: 10px;
+            font-size: 18px;
+            line-height: 1.5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .content-section .content .button{
+            margin-top: 30px;
+        }
+        .content-section .content .button a{
+            background-color: #3d3d3d;
+            box-sizing: 30px;
+            padding: 12px 40px;
+            text-decoration: none;
+            color: #ffff;
+            font-size: 25px;
+            letter-spacing: 1.5px;
+        }
+        .btn{
+            cursor: pointer;
+            background-color: aqua;
+            width: 100px;
+            height: 30px;
+            border-radius: 30px;
+            color: red;
+        }
+        .content-section .social
+        {
+            margin-top: 40px;
+
+        }
+        .button:hover{
+            text-decoration: none;
+        }        
+               
+    </style>
+
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>     About Us   </h1>
+                </div>            
+                <div class="Content">
+                    <h3>This layout looks simple enough, but there are some interesting details to it that will test your CSS skills.
+                    You'll also get to practice basic form validation.h3>
+                    <p>Your challenge is to build out this coming soon page and get it looking as close to the design as possible.
+                    <br>
+                    You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+                    <br><br>
+                    <h3>Your users should be able to:</h3><br>            
+                    1.View the optimal layout for the site depending on their device's screen size<br>
+                    2.See hover states for all interactive elements on the page.<br>
+                    3.Receive an error message when the form is submitted if:<br>
+                       The input field is empty.<br>
+                       The email address is not formatted correctly</p><br><br>
+                    <button class="btn">read more</button>
+                                                                
+                </div>
+                <div class="social">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="image-section"></div>
+            <img src="hero-mobile.jpg" width="300px" height="200px">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
